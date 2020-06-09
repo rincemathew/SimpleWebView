@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
         webView=findViewById(R.id.webView);
 
-        String url="http://androidstuff.net/";
+        String url="https://2gomovies.to/";
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+//        webView.getSettings().setLoadWithOverviewMode(true);
+//        webView.getSettings().setUseWideViewPort(true);
         webView.loadUrl(url);
 
         //preventing other browser to open links
